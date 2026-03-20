@@ -1,0 +1,4 @@
+user_id,name,age,weight_kg,height_cm,activity_level
+1,User1,21,55,160,moderate
+2,User2,45,62,158,light
+3,User3,50,68,155,light

@@ -1,0 +1,78 @@
+timestamp,user_id,day,readiness,workout,meal
+2026-01-04 16:01,shreya,Monday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:01,shreya,Tuesday,maintain,cardio,Dal Rice Combo
+2026-01-04 16:01,shreya,Wednesday,maintain,mobility,Vegetable Khichdi
+2026-01-04 16:01,shreya,Thursday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:01,shreya,Friday,maintain,cardio,Dal Rice Combo
+2026-01-04 16:01,shreya,Saturday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:01,shreya,Sunday,maintain,rest,Vegetable Khichdi
+2026-01-04 16:02,shreya,Monday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:02,shreya,Tuesday,maintain,cardio,Dal Rice Combo
+2026-01-04 16:02,shreya,Wednesday,maintain,mobility,Vegetable Khichdi
+2026-01-04 16:02,shreya,Thursday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:02,shreya,Friday,maintain,cardio,Dal Rice Combo
+2026-01-04 16:02,shreya,Saturday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:02,shreya,Sunday,maintain,rest,Vegetable Khichdi
+2026-01-04 16:12,user_001,Monday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:12,user_001,Tuesday,maintain,cardio,Dal Rice Combo
+2026-01-04 16:12,user_001,Wednesday,maintain,mobility,Vegetable Khichdi
+2026-01-04 16:12,user_001,Thursday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:12,user_001,Friday,maintain,cardio,Dal Rice Combo
+2026-01-04 16:12,user_001,Saturday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:12,user_001,Sunday,maintain,rest,Vegetable Khichdi
+2026-01-04 16:21,user_001,Monday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:21,user_001,Tuesday,maintain,cardio,Dal Rice Combo
+2026-01-04 16:21,user_001,Wednesday,maintain,mobility,Vegetable Khichdi
+2026-01-04 16:21,user_001,Thursday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:21,user_001,Friday,maintain,cardio,Dal Rice Combo
+2026-01-04 16:21,user_001,Saturday,maintain,strength,Paneer Power Bowl
+2026-01-04 16:21,user_001,Sunday,maintain,rest,Vegetable Khichdi
+2026-01-04 17:26,shreya,Monday,maintain,strength,Paneer Power Bowl
+2026-01-04 17:26,shreya,Tuesday,maintain,cardio,Dal Rice Combo
+2026-01-04 17:26,shreya,Wednesday,maintain,mobility,Vegetable Khichdi
+2026-01-04 17:26,shreya,Thursday,maintain,strength,Paneer Power Bowl
+2026-01-04 17:26,shreya,Friday,maintain,cardio,Dal Rice Combo
+2026-01-04 17:26,shreya,Saturday,maintain,strength,Paneer Power Bowl
+2026-01-04 17:26,shreya,Sunday,maintain,rest,Vegetable Khichdi
+2026-01-04 17:35,user_001,Monday,maintain,strength,Paneer Power Bowl
+2026-01-04 17:35,user_001,Tuesday,maintain,cardio,Dal Rice Combo
+2026-01-04 17:35,user_001,Wednesday,maintain,mobility,Vegetable Khichdi
+2026-01-04 17:35,user_001,Thursday,maintain,strength,Paneer Power Bowl
+2026-01-04 17:35,user_001,Friday,maintain,cardio,Dal Rice Combo
+2026-01-04 17:35,user_001,Saturday,maintain,strength,Paneer Power Bowl
+2026-01-04 17:35,user_001,Sunday,maintain,rest,Vegetable Khichdi
+2026-01-04 17:37,shreya,Monday,maintain,strength,Paneer Power Bowl
+2026-01-04 17:37,shreya,Tuesday,maintain,cardio,Dal Rice Combo
+2026-01-04 17:37,shreya,Wednesday,maintain,mobility,Vegetable Khichdi
+2026-01-04 17:37,shreya,Thursday,maintain,strength,Paneer Power Bowl
+2026-01-04 17:37,shreya,Friday,maintain,cardio,Dal Rice Combo
+2026-01-04 17:37,shreya,Saturday,maintain,strength,Paneer Power Bowl
+2026-01-04 17:37,shreya,Sunday,maintain,rest,Vegetable Khichdi
+2026-01-04 18:22,user_001,Monday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:22,user_001,Tuesday,maintain,cardio,Dal Rice Combo
+2026-01-04 18:22,user_001,Wednesday,maintain,mobility,Vegetable Khichdi
+2026-01-04 18:22,user_001,Thursday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:22,user_001,Friday,maintain,cardio,Dal Rice Combo
+2026-01-04 18:22,user_001,Saturday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:22,user_001,Sunday,maintain,rest,Vegetable Khichdi
+2026-01-04 18:22,user_001,Monday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:22,user_001,Tuesday,maintain,cardio,Dal Rice Combo
+2026-01-04 18:22,user_001,Wednesday,maintain,mobility,Vegetable Khichdi
+2026-01-04 18:22,user_001,Thursday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:22,user_001,Friday,maintain,cardio,Dal Rice Combo
+2026-01-04 18:22,user_001,Saturday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:22,user_001,Sunday,maintain,rest,Vegetable Khichdi
+2026-01-04 18:34,user_001,Monday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:34,user_001,Tuesday,maintain,cardio,Dal Rice Combo
+2026-01-04 18:34,user_001,Wednesday,maintain,mobility,Vegetable Khichdi
+2026-01-04 18:34,user_001,Thursday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:34,user_001,Friday,maintain,cardio,Dal Rice Combo
+2026-01-04 18:34,user_001,Saturday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:34,user_001,Sunday,maintain,rest,Vegetable Khichdi
+2026-01-04 18:34,user_001,Monday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:34,user_001,Tuesday,maintain,cardio,Dal Rice Combo
+2026-01-04 18:34,user_001,Wednesday,maintain,mobility,Vegetable Khichdi
+2026-01-04 18:34,user_001,Thursday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:34,user_001,Friday,maintain,cardio,Dal Rice Combo
+2026-01-04 18:34,user_001,Saturday,maintain,strength,Paneer Power Bowl
+2026-01-04 18:34,user_001,Sunday,maintain,rest,Vegetable Khichdi

@@ -1,0 +1,4 @@
+user_id,date,workout_feedback,food_feedback,free_text,workout_feedback_score,food_feedback_score
+1,2025-12-14,Too intense,Good,More protein options,-1,
+2,2025-12-14,Easy,Too little,Bigger portions,1,
+shreya,2025-12-14,Just right,Balanced,I love the app,0,0.0

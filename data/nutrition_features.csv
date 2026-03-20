@@ -1,0 +1,3 @@
+user_id,date,protein_g,weight_kg,required_protein,nutrition_balance_score
+1,2025-12-14,30,55,44.0,0.6818181818181818
+2,2025-12-14,8,62,49.6,0.16129032258064516

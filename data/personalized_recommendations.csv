@@ -1,0 +1,3 @@
+user_id,date,energy_level,recovery_level,sleep_hours,daily_energy_score,nutrition_balance_score,training_risk,recommendation
+1,2025-12-14,4,3,7,2.975,0.6818181818181818,optimal,Increase sleep and reduce workout intensity | Increase protein intake in meals
+2,2025-12-14,2,2,6,1.75,0.1612903225806451,safe,Increase sleep and reduce workout intensity | Increase protein intake in meals

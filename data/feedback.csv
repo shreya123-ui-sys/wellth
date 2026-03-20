@@ -1,0 +1,11 @@
+user_id,date,workout_feedback,food_feedback,free_text,feedback
+1,2025-12-14,Too intense,Good,More protein options,
+2,2025-12-14,Easy,Too little,Bigger portions,
+shreya,2025-12-14,Just right,Balanced,I love the app,
+1,2025-12-14,Too easy,Not filling,none,
+user_1,2025-12-14,Too intense,Not filling,,
+user_1,2025-12-15,Too intense,Not filling,,
+user_001,,,,,Just right
+user_001,,,,,Just right
+user_001,,,,,Just right
+user_001,,,,,Just right

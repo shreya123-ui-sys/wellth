@@ -1,0 +1,4 @@
+user_id,date,meal,food,calories,protein_g,carbs_g,fat_g
+1,2025-12-14,Breakfast,Oats with milk,350,12,55,8
+1,2025-12-14,Lunch,"Rice, dal, vegetables",520,18,75,10
+2,2025-12-14,Breakfast,Idli & chutney,300,8,50,5
