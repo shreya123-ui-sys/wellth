@@ -1,11 +1,7 @@
 import streamlit as st
 from datetime import date
 import os
-try:
-    from dotenv import load_dotenv
-    load_dotenv()
-except ImportError:
-    pass
+
 
 # ======================================
 # CUSTOM CSS
