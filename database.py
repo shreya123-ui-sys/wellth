@@ -77,6 +77,28 @@ def init_db():
             logged_at   TEXT DEFAULT (datetime('now'))
         )
     """)
+    
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS water_logs (
+            id          INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id     TEXT,
+            date        TEXT,
+            glasses     INTEGER,
+            logged_at   TEXT DEFAULT (datetime('now'))
+        )
+    """)
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS sleep_logs (
+            id            INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id       TEXT,
+            date          TEXT,
+            hours         REAL,
+            quality       TEXT,
+            notes         TEXT,
+            logged_at     TEXT DEFAULT (datetime('now'))
+        )
+    """)
 
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS feedback (

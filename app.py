@@ -5,6 +5,236 @@ import os
 
 load_dotenv()
 
+# ======================================
+# CUSTOM CSS
+# ======================================
+st.markdown("""
+<style>
+    /* Import Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    /* Global font */
+    html, body, [class*="css"] {
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Background */
+    .stApp {
+        background-color: #f8faf8;
+    }
+
+    /* Sidebar */
+    [data-testid="stSidebar"] {
+        background-color: #ffffff;
+        border-right: 1px solid #e8f0e8;
+    }
+
+    /* Sidebar ALL text — force dark */
+    [data-testid="stSidebar"],
+    [data-testid="stSidebar"] *,
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] span,
+    [data-testid="stSidebar"] div,
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] h1,
+    [data-testid="stSidebar"] h2,
+    [data-testid="stSidebar"] h3,
+    [data-testid="stSidebar"] small,
+    [data-testid="stSidebar"] caption {
+        color: #1a2e1a !important;
+    }
+
+    /* All general text */
+    p, span, label, div {
+        color: #2d4a2d;
+    }
+
+    /* Input text */
+    input, textarea, select {
+        color: #2d4a2d !important;
+        background-color: #ffffff !important;
+    }
+
+    /* Selectbox text */
+    [data-testid="stSelectbox"] div,
+    [data-testid="stSelectbox"] span {
+        color: #2d4a2d !important;
+    }
+
+    /* Number input */
+    [data-testid="stNumberInput"] input {
+        color: #2d4a2d !important;
+    }
+
+    /* Text input */
+    [data-testid="stTextInput"] input {
+        color: #2d4a2d !important;
+    }
+
+    /* Dropdown options */
+    [data-baseweb="select"] * {
+        color: #2d4a2d !important;
+    }
+
+    /* Slider */
+    [data-testid="stSlider"] label,
+    [data-testid="stSlider"] div {
+        color: #2d4a2d !important;
+    }
+
+    /* Metric cards */
+    [data-testid="stMetric"] {
+        background-color: #ffffff;
+        border: 1px solid #e0ece0;
+        border-radius: 12px;
+        padding: 16px !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    [data-testid="stMetricLabel"] {
+        font-size: 0.75rem !important;
+        color: #6b7c6b !important;
+        font-weight: 500 !important;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    [data-testid="stMetricValue"] {
+        font-size: 1.4rem !important;
+        font-weight: 700 !important;
+        color: #2d4a2d !important;
+    }
+
+    [data-testid="stMetricDelta"] {
+        font-size: 0.8rem !important;
+        color: #5a8a5a !important;
+    }
+
+    /* Buttons */
+    .stButton > button {
+        background-color: #5a8a5a;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 20px;
+        font-weight: 500;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+    }
+
+    .stButton > button:hover {
+        background-color: #4a7a4a;
+        box-shadow: 0 4px 12px rgba(90,138,90,0.3);
+        transform: translateY(-1px);
+    }
+
+    /* Tabs */
+    .stTabs [data-baseweb="tab-list"] {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 4px;
+        border: 1px solid #e0ece0;
+        gap: 4px;
+    }
+
+    .stTabs [data-baseweb="tab"] {
+        border-radius: 8px;
+        color: #6b7c6b;
+        font-weight: 500;
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+
+    .stTabs [aria-selected="true"] {
+        background-color: #5a8a5a !important;
+        color: white !important;
+    }
+
+    /* Expanders */
+    [data-testid="stExpander"] {
+        background-color: #ffffff;
+        border: 1px solid #e0ece0;
+        border-radius: 12px;
+        margin-bottom: 8px;
+    }
+
+    /* Info / Success / Warning boxes */
+    [data-testid="stAlert"] {
+        border-radius: 12px;
+        border: none;
+    }
+
+    /* Text inputs */
+    [data-testid="stTextInput"] input {
+        border-radius: 8px;
+        border: 1px solid #d0e4d0;
+        background-color: #ffffff;
+    }
+
+    /* Select boxes */
+    [data-testid="stSelectbox"] > div {
+        border-radius: 8px;
+    }
+
+    /* Progress bar */
+    [data-testid="stProgressBar"] > div {
+        background-color: #5a8a5a !important;
+        border-radius: 8px;
+    }
+
+    /* Divider */
+    hr {
+        border-color: #e0ece0;
+        margin: 1.5rem 0;
+    }
+
+    /* Headers */
+    h1 {
+        color: #2d4a2d !important;
+        font-weight: 700 !important;
+        font-size: 1.8rem !important;
+    }
+
+    h2 {
+        color: #3a5a3a !important;
+        font-weight: 600 !important;
+    }
+
+    h3 {
+        color: #4a6a4a !important;
+        font-weight: 600 !important;
+    }
+
+    /* Dataframe */
+    [data-testid="stDataFrame"] {
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #e0ece0;
+    }
+
+    /* Forms */
+    [data-testid="stForm"] {
+        background-color: #ffffff;
+        border: 1px solid #e0ece0;
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    /* Sidebar text */
+    [data-testid="stSidebar"] h1,
+    [data-testid="stSidebar"] h2,
+    [data-testid="stSidebar"] h3 {
+        color: #2d4a2d !important;
+    }
+
+    /* Hide Streamlit branding */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+
+</style>
+""", unsafe_allow_html=True)
+
 from database import init_db
 from user_engine import create_user, get_user, user_exists, calculate_bmi, calculate_tdee
 from cycle_engine import log_period, get_cycle_phase, get_phase_recommendations
@@ -114,51 +344,103 @@ else:
 
     tdee = calculate_tdee(user)
 
-    tab_home, tab_cycle, tab_workout, tab_meals, tab_recipes, tab_progress = st.tabs([
-        "🏠 Home", "🌙 Cycle", "🏋️ Workout", "🍽️ Meals", "📖 Recipes", "📈 Progress"
+    tab_home, tab_cycle, tab_workout, tab_meals, tab_recipes, tab_progress, tab_health = st.tabs([
+        "🏠 Home", "🌙 Cycle", "🏋️ Workout", "🍽️ Meals", "📖 Recipes", "📈 Progress", "💧 Health"
     ])
 
     # --------------------------------------------------
     # TAB 1 — HOME
     # --------------------------------------------------
     with tab_home:
-        st.title(f"🧠 Wellth — {date.today().strftime('%A, %d %B %Y')}")
-        st.markdown("---")
+        # Hero section
+        st.markdown(f"""
+        <div style="
+            background: linear-gradient(135deg, #e8f5e8 0%, #f0f7f0 50%, #e0efe0 100%);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid #d0e8d0;
+        ">
+            <h1 style="margin:0; font-size:2rem; color:#2d4a2d;">
+                Good {
+                    'morning 🌅' if date.today().weekday() < 5 else 'weekend 🌿'
+                }, {user['name']}!
+            </h1>
+            <p style="margin:8px 0 0 0; color:#5a7a5a; font-size:1rem;">
+                {date.today().strftime('%A, %d %B %Y')} &nbsp;·&nbsp;
+                {cycle_info['emoji']} {phase.title()} Phase
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
 
+        # Metrics row
         col1, col2, col3, col4 = st.columns(4)
         bmi_data = calculate_bmi(user["weight_kg"], user["height_cm"])
         totals   = get_daily_totals(user_id)
 
-        col1.metric("BMI",                bmi_data["bmi"], bmi_data["category"])
-        col2.metric("Daily Calorie Target", f"{tdee} kcal")
-        col3.metric("Calories Today",      f"{totals.get('total_calories', 0)} kcal")
-        col4.metric("Cycle Phase",         f"{cycle_info['emoji']} {phase.title()}")
+        from health_engine import get_water_today, get_sleep_today
+        glasses_today = get_water_today(user_id)
+        sleep_today   = get_sleep_today(user_id)
+
+        col1.metric("🔥 Calories Today",    f"{totals.get('total_calories', 0)} kcal",
+                    f"Target: {tdee} kcal")
+        col2.metric("💧 Water",             f"{glasses_today} / 8 glasses")
+        col3.metric("😴 Sleep",             f"{sleep_today['hours']}h" if sleep_today else "Not logged")
+        col4.metric("⚖️ BMI",               bmi_data["bmi"], bmi_data["category"])
 
         st.markdown("---")
-        st.subheader(f"{cycle_info['emoji']} Today's Insight")
-        st.info(cycle_info["description"])
 
-        recs   = get_phase_recommendations(phase)
-        col_a, col_b = st.columns(2)
+        # Phase insight card
+        recs = get_phase_recommendations(phase)
+        col_a, col_b = st.columns([1.2, 1])
 
         with col_a:
-            st.markdown("**💪 Recommended Workout**")
-            st.write(recs["workout_type"])
-            st.markdown("**🥗 Nutrition Focus**")
-            st.write(recs["nutrition_focus"])
+            st.markdown(f"""
+            <div style="
+                background: #ffffff;
+                border-radius: 16px;
+                padding: 24px;
+                border: 1px solid #e0ece0;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+                height: 100%;
+            ">
+                <div style="font-size: 2rem; margin-bottom: 8px;">{cycle_info['emoji']}</div>
+                <h3 style="margin: 0 0 8px 0; color: #2d4a2d;">
+                    {phase.title()} Phase — Day {cycle_info['day'] or '?'}
+                </h3>
+                <p style="color: #5a7a5a; font-size: 0.9rem; line-height: 1.6; margin: 0;">
+                    {cycle_info['description']}
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
 
         with col_b:
-            st.markdown("**✅ Foods to eat**")
-            for f in recs["foods_to_eat"]:
-                st.write(f"• {f}")
-            if recs["foods_to_avoid"]:
-                st.markdown("**❌ Foods to limit**")
-                for f in recs["foods_to_avoid"]:
-                    st.write(f"• {f}")
+            st.markdown(f"""
+            <div style="
+                background: #ffffff;
+                border-radius: 16px;
+                padding: 24px;
+                border: 1px solid #e0ece0;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            ">
+                <h3 style="margin: 0 0 16px 0; color: #2d4a2d;">Today's Focus</h3>
+                <p style="margin: 0 0 8px 0; color: #4a6a4a;">
+                    <strong>💪 Workout:</strong> {recs['workout_type']}
+                </p>
+                <p style="margin: 0 0 16px 0; color: #4a6a4a;">
+                    <strong>🥗 Nutrition:</strong> {recs['nutrition_focus']}
+                </p>
+                <p style="margin: 0; color: #5a7a5a; font-size: 0.85rem;">
+                    <strong>✅ Eat:</strong> {', '.join(recs['foods_to_eat'][:3])}
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
 
         st.markdown("---")
+
+        # AI explanation button
         st.subheader("🤖 AI Phase Explanation")
-        if st.button("Explain my current phase"):
+        if st.button("✨ Explain my current phase"):
             with st.spinner("Asking AI..."):
                 explanation = explain_cycle_phase(phase)
             st.success(explanation)
@@ -427,3 +709,158 @@ else:
                 st.markdown(f"**{w['date']}** — {w['workout']} | {w['duration']} min | {w['intensity'].title()} | {w['feedback'] or 'No feedback'}")
         else:
             st.info("No workouts logged yet. Complete a workout and log it!")
+
+    # --------------------------------------------------
+    # TAB 7 — HEALTH (Water & Sleep)
+    # --------------------------------------------------
+    with tab_health:
+        st.title("💧 Water & Sleep Tracker")
+        st.markdown("---")
+
+        from health_engine import (
+            log_water, get_water_today, get_water_history,
+            get_water_message, reset_water, DAILY_WATER_GOAL,
+            log_sleep, get_sleep_today, get_sleep_history,
+            get_sleep_message, get_avg_sleep, SLEEP_GOAL
+        )
+
+        water_tab, sleep_tab = st.tabs(["💧 Water", "😴 Sleep"])
+
+        # --------------------------------------------------
+        # WATER TAB
+        # --------------------------------------------------
+        with water_tab:
+            st.subheader("💧 Daily Water Intake")
+
+            glasses_today = get_water_today(user_id)
+            water_msg     = get_water_message(glasses_today)
+
+            # Progress bar
+            progress = min(glasses_today / DAILY_WATER_GOAL, 1.0)
+            st.progress(progress)
+
+            col1, col2, col3 = st.columns(3)
+            col1.metric("Glasses Today",  f"{glasses_today} / {DAILY_WATER_GOAL}")
+            col2.metric("Remaining",      f"{max(DAILY_WATER_GOAL - glasses_today, 0)} glasses")
+            col3.metric("Goal",           f"{DAILY_WATER_GOAL} glasses")
+
+            # Message
+            if water_msg["color"] == "success":
+                st.success(f"{water_msg['emoji']} {water_msg['message']}")
+            elif water_msg["color"] == "warning":
+                st.warning(f"{water_msg['emoji']} {water_msg['message']}")
+            elif water_msg["color"] == "error":
+                st.error(f"{water_msg['emoji']} {water_msg['message']}")
+            else:
+                st.info(f"{water_msg['emoji']} {water_msg['message']}")
+
+            st.markdown("---")
+
+            # Quick add buttons
+            st.subheader("Quick Add")
+            col1, col2, col3, col4 = st.columns(4)
+
+            if col1.button("+ 1 glass 💧"):
+                log_water(user_id, 1)
+                st.rerun()
+            if col2.button("+ 2 glasses 💧💧"):
+                log_water(user_id, 2)
+                st.rerun()
+            if col3.button("+ 3 glasses 💧💧💧"):
+                log_water(user_id, 3)
+                st.rerun()
+            if col4.button("Reset 🔄"):
+                reset_water(user_id)
+                st.rerun()
+
+            st.markdown("---")
+
+            # History
+            st.subheader("Last 7 days")
+            water_history = get_water_history(user_id, days=7)
+
+            if water_history:
+                import pandas as pd
+                df_water = pd.DataFrame(water_history).set_index("date")
+                st.bar_chart(df_water["glasses"])
+            else:
+                st.info("No water history yet. Start logging!")
+
+            # Cycle-aware tip
+            st.markdown("---")
+            phase_water_tips = {
+                "menstrual":  "🌑 Drink warm water with lemon during your period — it helps with cramps.",
+                "follicular": "🌒 Stay hydrated to support rising energy levels this phase.",
+                "ovulatory":  "🌕 Peak phase means peak sweat — drink more if you're training hard!",
+                "luteal":     "🌘 Bloating is common in luteal phase. Consistent water helps reduce it.",
+                "unknown":    "💧 Aim for 8 glasses a day for optimal health."
+            }
+            st.info(phase_water_tips.get(phase, phase_water_tips["unknown"]))
+
+        # --------------------------------------------------
+        # SLEEP TAB
+        # --------------------------------------------------
+        with sleep_tab:
+            st.subheader("😴 Sleep Tracker")
+
+            sleep_today = get_sleep_today(user_id)
+            avg_sleep   = get_avg_sleep(user_id, days=7)
+
+            col1, col2, col3 = st.columns(3)
+            col1.metric("Last Night",    f"{sleep_today['hours']}h" if sleep_today else "Not logged")
+            col2.metric("7-Day Average", f"{avg_sleep}h")
+            col3.metric("Sleep Goal",    f"{SLEEP_GOAL}h")
+
+            if sleep_today:
+                sleep_msg = get_sleep_message(sleep_today["hours"], phase)
+                if sleep_msg["color"] == "success":
+                    st.success(f"{sleep_msg['emoji']} {sleep_msg['message']}")
+                elif sleep_msg["color"] == "warning":
+                    st.warning(f"{sleep_msg['emoji']} {sleep_msg['message']}")
+                elif sleep_msg["color"] == "error":
+                    st.error(f"{sleep_msg['emoji']} {sleep_msg['message']}")
+                else:
+                    st.info(f"{sleep_msg['emoji']} {sleep_msg['message']}")
+
+            st.markdown("---")
+            st.subheader("Log Last Night's Sleep")
+
+            with st.form("sleep_form"):
+                col1, col2 = st.columns(2)
+                with col1:
+                    sleep_hours   = st.slider("Hours slept", 0.0, 12.0, 7.0, step=0.5)
+                with col2:
+                    sleep_quality = st.selectbox("Sleep quality", ["Poor", "Fair", "Good", "Excellent"])
+                sleep_notes   = st.text_input("Any notes? (optional)")
+                sleep_submit  = st.form_submit_button("Log Sleep 😴")
+
+            if sleep_submit:
+                log_sleep(user_id, sleep_hours, sleep_quality, sleep_notes)
+                st.success(f"Logged {sleep_hours}h of {sleep_quality} sleep!")
+                st.rerun()
+
+            st.markdown("---")
+            st.subheader("Sleep history — last 7 days")
+            sleep_history = get_sleep_history(user_id, days=7)
+
+            if sleep_history:
+                import pandas as pd
+                df_sleep = pd.DataFrame(sleep_history).set_index("date")
+                st.line_chart(df_sleep["hours"])
+
+                st.markdown("**Detailed log:**")
+                for s in sleep_history:
+                    st.markdown(f"**{s['date']}** — {s['hours']}h | {s['quality']} | {s['notes'] or 'No notes'}")
+            else:
+                st.info("No sleep history yet. Log your sleep above!")
+
+            # Cycle-aware tip
+            st.markdown("---")
+            phase_sleep_tips = {
+                "menstrual":  "🌑 Your body needs more rest during menstruation. Don't fight the tiredness.",
+                "follicular": "🌒 Sleep helps consolidate the energy gains of follicular phase.",
+                "ovulatory":  "🌕 You may need less sleep now — but don't skip it!",
+                "luteal":     "🌘 Progesterone rises in luteal phase — you may feel sleepier. Listen to your body.",
+                "unknown":    "💤 Consistent sleep timing improves sleep quality over time."
+            }
+            st.info(phase_sleep_tips.get(phase, phase_sleep_tips["unknown"]))
